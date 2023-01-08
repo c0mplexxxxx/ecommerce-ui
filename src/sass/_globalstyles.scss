@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import './variables';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 1.15em;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+
+.container {
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+}
+
+.btn-primary {
+    background-color: $pri-color;
+    border: none;
+    padding: 19px 26px;
+    width: 100%;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mb {
+    &-32 {
+        margin-bottom: 32px;
+    }
+    &-40 {
+        margin-bottom: 40px;
+    }
+}
+
+.gap {
+    &-30 {
+        gap: 30px;
+    }
+    &-32 {
+        gap: 32px;
+    }
+    &-40 {
+        gap: 40px;
+    }
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+

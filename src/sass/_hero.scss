@@ -1,0 +1,201 @@
+.hero-wrapper {
+    padding: 51px 0;
+}
+
+.hero__categories-wrapper {
+    width: 38%;
+    padding: 32px 24px;
+    border: 1px solid #e2e6eb;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.hero__categories__heading {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e6eb;
+    i {
+        font-size: 28px;
+        color: $pri-color;
+        margin-right: 4px;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.hero__categories__list {
+    a {
+        transition: all 0.3s;
+        &:hover {
+            i, p {
+                color: $pri-color;
+            }
+            .end-ic {
+                transform: translate3d(4px,0,0);
+            }
+        }
+    }
+    button {
+        transition: all .3s;
+        &:hover {
+            transform: translate3d(0,-4px,0);
+            background-color: #006fd5;
+        }
+    }
+}
+
+.hero__categories__list-btn {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.15em;
+}
+
+.hero__categories__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #e2e6eb;
+    i {
+        font-size: 24px;
+        color: rgb(102, 105, 108);
+        transition: all 0.3s;
+
+    }
+    .start-ic {
+        font-size: 24px;
+        color: $pri-color;
+        margin-right: 8px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(102, 105, 108);
+        line-height: 1.15em;
+        transition: all 0.3s;
+    }
+    span {
+        background-color: $pri-color;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 20px;
+        line-height: 1.16em;
+        margin-left: 16px;
+        padding: 2px 5px;
+    }
+}
+
+.hero__promotion-feature-wrapper {
+    background-color: #fffbf8;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.hero__promotion-feature {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    &__content {
+        padding: 48px 0;
+        padding-left: 48px;
+        position: absolute;
+        h5 {
+            font-size: 18px;
+            margin-bottom: 14px;
+            line-height: 1.15em;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 36px;
+            line-height: 1.5em;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        p {
+            color: #3c3e40;
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+    }
+    img {
+        object-fit: cover;
+        margin-left: 60%;
+        margin-bottom: -10%;
+    }
+}
+
+.hero__buy-btn {
+    padding: 19px 26px;
+    border: none;
+    border-radius: 40px;
+    background-color: #20283f;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1em;
+    transition: all .3s;
+    &:hover {
+        background-color: #3c3e40;
+        transform: translate3d(0,-4px,0);
+        cursor: pointer;
+    }
+}
+
+.hero__promotion-banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fffbf8;
+    border-radius: 16px;
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+    &__heading {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.5em;
+        margin-bottom: 8px;
+    }
+    &__description {
+        color: #252729;
+        font-size: 18px;
+        line-height: 1.15em;
+        margin-bottom: 18px;
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 40px;
+        max-width: 75%;
+        padding-top: 40px;
+        // &--left {
+        //     background: url("https://assets.website-files.com/62f51a90d298e6f454bbffca/62f5a123c23d652751277825_image-2-promotion-shopwave-template.webp");
+        //     background-size: cover;
+        //     width: 572px;
+        //     background-repeat: no-repeat;
+
+        // }
+        // &--right {
+        //     background: url("https://assets.website-files.com/62f51a90d298e6f454bbffca/62f59f2e3ef1494f28c278de_image-3-promotion-shopwave-template.webp");
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        // }
+    }
+    &__image {
+        width: 10%;
+        height: auto;
+        margin-top: -42%;
+    }
+}

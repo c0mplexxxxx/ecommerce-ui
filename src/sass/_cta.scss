@@ -1,0 +1,55 @@
+.cta-wrapper {
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+.cta-section {
+    width: 100%;
+    background-color: #f7f8f9;
+    border-radius: 16px;
+    position: relative;
+}
+
+.cta {
+    max-width: 992px;
+    padding: 104px 92px;
+    display: flex;
+    &__vertical-line {
+        width: 3px;
+        background-color: $pri-color;
+        margin: 10px 0;
+        margin-right: 31px;
+    }
+    &__content {
+        display: flex;
+        margin-bottom: 24px;
+        h2 {
+            font-size: 40px;
+        }
+        h1 {
+            font-size: 110px;
+            font-weight: 700;
+        }
+    }
+    img {
+        position: absolute;
+        object-fit: cover;
+        top: -8%;
+        right: 8%;
+    }
+    p {
+        color: #252729;
+        font-size: 18px;
+        .discount-code {
+            display: inline-block;
+            color: #fff;
+            background-color: $pri-color;
+            font-weight: 700;
+            font-size: 16px;
+            border-radius: 46px;
+            padding: 12px;
+            line-height: .75em;
+            margin-left: 12px;
+        }
+    }
+}

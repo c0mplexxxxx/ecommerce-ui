@@ -15,10 +15,10 @@ const Cta = () => {
                                     <h2>In Fashion</h2>
                                 </div>
                             </div>
-                            <p>
+                            <div className="discount-text">
                                 Use the discount code
                                 <div className="discount-code">FASH2022</div>
-                            </p>
+                            </div>
                         </div>
                         <img
                             src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f5a283764027ab420ddfc3_image-cta-v1-shopwave-template-p-500.png"

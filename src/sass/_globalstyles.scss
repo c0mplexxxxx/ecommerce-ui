@@ -13,6 +13,7 @@ body {
     font-size: 16px;
     line-height: 1.15em;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 ul {
@@ -55,6 +56,12 @@ a {
     &-40 {
         margin-bottom: 40px;
     }
+    &-21 {
+        margin-bottom: 21px;
+    }
+    &-100 {
+        margin-bottom: 100px;
+    }
 }
 
 .gap {
@@ -80,4 +87,5 @@ a {
 .line-through {
     text-decoration: line-through;
 }
+
 

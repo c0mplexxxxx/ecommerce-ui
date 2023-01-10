@@ -88,4 +88,14 @@ a {
     text-decoration: line-through;
 }
 
+[data-aos="fade-up-sm"] {
+    transform: translateY(16px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
 

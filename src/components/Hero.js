@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    }, [])
     return (
         <div className="hero-wrapper">
             <div className="container">
-                <div className="d-flex gap-32 mb-32">
+                <div className="d-flex gap-32 mb-32" data-aos="fade-up-sm">
                     <div className="hero__categories-wrapper">
                         <div className="hero__categories">
                             <div className="hero__categories__heading">
@@ -74,6 +79,7 @@ const Hero = () => {
                                 </button>
                             </div>
                             <img
+                                    data-aos="zoom-in-up"
                                     src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f59f2e85742f2812aad006_image-1-promotion-shopwave-template-p-500.webp"
                                     alt="2x1 in basic hoodies"
                             ></img>
@@ -81,7 +87,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="d-flex gap-32">
-                    <div className="hero__promotion-banner">
+                    <div className="hero__promotion-banner" data-aos="fade-up">
                         <div className="hero__promotion-banner__content">
                             <h2 className="hero__promotion-banner__heading">
                                 Get 40% OFF in plants
@@ -99,7 +105,7 @@ const Hero = () => {
                             alt="Get 40% OFF in plants"
                         ></img>
                     </div>
-                    <div className="hero__promotion-banner">
+                    <div className="hero__promotion-banner" data-aos="fade-up">
                         <div className="hero__promotion-banner__content">
                             <h2 className="hero__promotion-banner__heading">
                                 Get 15% OFF in decoration

@@ -1,13 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+    useEffect(() => {
+        AOS.init({duration: 800});
+    }, [])
     return (
         <footer>
             <div className="footer-wrapper">
-                <div className="footer-content">
+                <div className="footer-content" data-aos="fade">
                     <Container>
                         <Row>
                             <div className="d-flex gap-40">

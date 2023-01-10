@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TopCategories = () => {
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    }, [])
     return (
-        <div className="top-categories container">
+        <div className="top-categories container" data-aos="fade-up">
             <div className="inner-container">
                 <div className="mb-40">
                     <h2>Top categories this month</h2>

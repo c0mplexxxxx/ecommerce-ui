@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ShopPerks = () => {
+    useEffect(() => {
+        AOS.init({duration: 700});
+    }, [])
   return (
-    <div className="shop-perks-wrapper">
+    <div className="shop-perks-wrapper" data-aos="fade-up-sm">
         <div className="shop-perks__container">
             <div className="shop-perks">
                 <div className="shop-perks__item">

@@ -1,12 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Latest = () => {
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    }, [])
     return (
-        <div className="lastest-wrapper">
-            <div className="container">
+        <div className="lastest-wrapper" data-aos="fade-up">
+            <div className="container" >
                 <div className="lastest__header">
                     <h2>Lastest product</h2>
                     <a href="/" className="lastest__btn">

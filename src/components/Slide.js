@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { default as products } from "../assets/Products";
+import { default as products } from "../assets/Data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,7 +8,7 @@ function SampleNextArrow(props) {
     const { onClick } = props;
     return (
         <div className={"arrow arrow--right"} onClick={onClick}>
-            <i class="bx bx-chevron-right"></i>
+            <i className="bx bx-chevron-right"></i>
         </div>
     );
 }
@@ -17,7 +17,7 @@ function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
         <div className={"arrow arrow--left"} onClick={onClick}>
-            <i class="bx bx-chevron-left"></i>
+            <i className="bx bx-chevron-left"></i>
         </div>
     );
 }

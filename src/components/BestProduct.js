@@ -1,12 +1,12 @@
 import React, {useEffect} from "react";
-import { default as products } from "../assets/Products";
+import { default as products } from "../assets/Data";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const listItems = products.map((product, index) => {
     if (index < 3) {
         return (
-            <li>
+            <li key={product.id}>
                 <a href="/">
                     <div className="best-product__item">
                         <div className="best-product__item__image">

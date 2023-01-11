@@ -7,7 +7,6 @@ import TopCategories from '../../components/TopCategories'
 import BestProduct from '../../components/BestProduct'
 import ShopPerks from '../../components/ShopPerks'
 
-
 const Home = () => {
   return (
     <div>

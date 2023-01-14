@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
+import Shop from "./pages/Shop/Shop";
 import Category from "./pages/Category/Category";
 import Product from "./pages/Product/Product";
 import Header from "./components/Header";
@@ -10,11 +10,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Layout = () => {
-    useEffect(() => {
-        AOS.init({duration: 1000});
-    }, []);
+    AOS.init({
+        once: true,
+        offset: 150,
+        easing: 'ease-out'
+    });
     return (
-        <div className="App" data-aos="fade-up">
+        <div className="App">
             <Header />
             <Outlet />
             <Footer />
@@ -32,8 +34,8 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/about",
-                element: <About />,
+                path: "/shop",
+                element: <Shop />,
             },
             {
                 path: "/category/:id",

@@ -31,6 +31,9 @@
     &:hover {
         transform: translate3d(0,-6px,0);
         box-shadow: 0 13px 14px 0 rgb(37 39 41 / 4%);
+        h4 {
+            color: $pri-color;
+        }
         img {
             transform: scale(1.05);
         }

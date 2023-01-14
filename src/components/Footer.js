@@ -4,11 +4,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
-    useEffect(() => {
-        AOS.init({duration: 800});
-    }, [])
+    
     return (
         <footer>
             <div className="footer-wrapper">
@@ -23,49 +22,49 @@ const Footer = () => {
                                             <div className="footer-content__col__menu-list">
                                                 <ul>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Sales home
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">Home</a>
+                                                        <Link to="/">Home</Link>
                                                     </li>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">Shop</a>
+                                                        <Link to="/">Shop</Link>
                                                     </li>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Product single
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Product category
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div className="footer-content__col__menu-list">
                                                 <ul>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">About</a>
+                                                        <Link to="/">About</Link>
                                                     </li>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">Blog</a>
+                                                        <Link to="/">Blog</Link>
                                                     </li>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Blog post
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__menu-item">
-                                                        <a href="/">Contact</a>
+                                                        <Link to="/">Contact</Link>
                                                     </li>
                                                     <li className="footer-content__col__menu-item special">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Fore more infomation
                                                             <i className="bx bx-right-arrow-alt"></i>
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -79,32 +78,32 @@ const Footer = () => {
                                             <div className="footer-content__col__pages-list">
                                                 <ul>
                                                     <li className="footer-content__col__pages-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Start here
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__pages-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Style guide
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__pages-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Password protected
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__pages-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             404 Not found
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__pages-item">
-                                                        <a href="/">Licenses</a>
+                                                        <Link to="/">Licenses</Link>
                                                     </li>
                                                     <li className="footer-content__col__pages-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             Changelog
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -118,7 +117,7 @@ const Footer = () => {
                                             <div className="footer-content__col__product-list">
                                                 <ul>
                                                     <li className="footer-content__col__product-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             <div className="nav-product">
                                                                 <div className="nav-product--image">
                                                                     <img src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f677ae1f141b61a0ece159_image-3-footer-best-product-shopwave-template.webp"></img>
@@ -137,10 +136,10 @@ const Footer = () => {
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__product-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             <div className="nav-product">
                                                                 <div className="nav-product--image">
                                                                     <img src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f677ae58cd9bd555322519_image-2-footer-best-product-shopwave-template.webp"></img>
@@ -159,10 +158,10 @@ const Footer = () => {
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li className="footer-content__col__product-item">
-                                                        <a href="/">
+                                                        <Link to="/">
                                                             <div className="nav-product">
                                                                 <div className="nav-product--image">
                                                                     <img src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f677ad1068fd47136a92e7_image-1-footer-best-product-shopwave-template.webp"></img>
@@ -181,7 +180,7 @@ const Footer = () => {
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                 </ul>
                                             </div>

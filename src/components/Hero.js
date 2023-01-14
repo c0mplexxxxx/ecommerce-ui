@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from "react-router-dom";
 
 const Hero = () => {
-    useEffect(() => {
-        AOS.init({duration: 1000});
-    }, [])
     return (
-        <div className="hero-wrapper">
+        <div className="hero-wrapper" data-aos="fade-up">
             <div className="container">
-                <div className="d-flex gap-32 mb-32" data-aos="fade-up-sm">
+                <div className="d-flex gap-32 mb-32">
                     <div className="hero__categories-wrapper">
                         <div className="hero__categories">
                             <div className="hero__categories__heading">
@@ -17,7 +15,7 @@ const Hero = () => {
                                 <h3>Categories</h3>
                             </div>
                             <div className="hero__categories__list">
-                                <a href="/">
+                                <Link to="/">
                                     <div className="hero__categories__list-item">
                                         <div className="d-flex align-center">
                                             <i className="bx bx-star start-ic"></i>
@@ -26,8 +24,8 @@ const Hero = () => {
                                         </div>
                                         <i className="bx bx-chevron-right end-ic"></i>
                                     </div>
-                                </a>
-                                <a href="/">
+                                </Link>
+                                <Link to="/">
                                     <div className="hero__categories__list-item">
                                         <div className="d-flex align-center">
                                             <i className="bx bxs-t-shirt start-ic"></i>
@@ -35,8 +33,8 @@ const Hero = () => {
                                         </div>
                                         <i className="bx bx-chevron-right end-ic"></i>
                                     </div>
-                                </a>
-                                <a href="/">
+                                </Link>
+                                <Link to="/">
                                     <div className="hero__categories__list-item">
                                         <div className="d-flex align-center">
                                             <i className="bx bx-paint-roll start-ic"></i>
@@ -44,8 +42,8 @@ const Hero = () => {
                                         </div>
                                         <i className="bx bx-chevron-right end-ic"></i>
                                     </div>
-                                </a>
-                                <a href="/">
+                                </Link>
+                                <Link to="/">
                                     <div className="hero__categories__list-item">
                                         <div className="d-flex align-center">
                                             <i className="bx bx-leaf start-ic"></i>
@@ -53,7 +51,7 @@ const Hero = () => {
                                         </div>
                                         <i className="bx bx-chevron-right end-ic"></i>
                                     </div>
-                                </a>
+                                </Link>
                                 <button
                                     type="submit"
                                     className="btn-primary hero__categories__list-btn"
@@ -79,7 +77,8 @@ const Hero = () => {
                                 </button>
                             </div>
                             <img
-                                    data-aos="zoom-in-up"
+                                    data-aos="zoom-in"
+                                    data-aos-delay="300"
                                     src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f59f2e85742f2812aad006_image-1-promotion-shopwave-template-p-500.webp"
                                     alt="2x1 in basic hoodies"
                             ></img>
@@ -87,7 +86,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="d-flex gap-32">
-                    <div className="hero__promotion-banner" data-aos="fade-up">
+                    <div className="hero__promotion-banner" >
                         <div className="hero__promotion-banner__content">
                             <h2 className="hero__promotion-banner__heading">
                                 Get 40% OFF in plants
@@ -101,11 +100,14 @@ const Hero = () => {
                             </button>
                         </div>
                         <img
+                            data-aos="fade"
+                            data-aos-duration="1000"
+                            data-aos-delay="200"
                             src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f5a123c23d652751277825_image-2-promotion-shopwave-template.webp"
                             alt="Get 40% OFF in plants"
                         ></img>
                     </div>
-                    <div className="hero__promotion-banner" data-aos="fade-up">
+                    <div className="hero__promotion-banner" >
                         <div className="hero__promotion-banner__content">
                             <h2 className="hero__promotion-banner__heading">
                                 Get 15% OFF in decoration
@@ -119,6 +121,9 @@ const Hero = () => {
                             </button>
                         </div>
                         <img
+                            data-aos="fade"
+                            data-aos-duration="1000"
+                            data-aos-delay="200"
                             src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f59f2e3ef1494f28c278de_image-3-promotion-shopwave-template.webp"
                             alt="Get 15% OFF in decoration"
                         ></img>

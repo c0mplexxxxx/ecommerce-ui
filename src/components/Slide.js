@@ -3,6 +3,7 @@ import { default as products } from "../assets/Data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {Link} from "react-router-dom";
 
 function SampleNextArrow(props) {
     const { onClick } = props;
@@ -37,7 +38,7 @@ export default class Responsive extends Component {
                 <Slider {...settings}>
                     {products.map((product) => (
                         <div className="slider__product" key={product.id}>
-                            <a href="/">
+                            <Link to="/product/1">
                                 <div className="slider__product__image">
                                     <img
                                         src={product.src}
@@ -59,7 +60,7 @@ export default class Responsive extends Component {
                                         Add to cart
                                     </button>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     ))}
                 </Slider>

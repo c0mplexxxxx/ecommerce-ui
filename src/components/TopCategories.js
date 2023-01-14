@@ -1,11 +1,10 @@
 import React, {useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from "react-router-dom";
 
 const TopCategories = () => {
-    useEffect(() => {
-        AOS.init({duration: 1000});
-    }, [])
+    
     return (
         <div className="top-categories container" data-aos="fade-up">
             <div className="inner-container">
@@ -14,7 +13,7 @@ const TopCategories = () => {
                 </div>
                 <div className="top-categories__list">
                     <div className="top-categories__item">
-                        <a href="/">
+                        <Link to="/shop">
                             <div className="mb-21 top-categories__image">
                                 <img
                                     src="https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6ac6d071b6785a7bb4a14_image-1-shop-categories-shopwave-template.png"
@@ -22,10 +21,10 @@ const TopCategories = () => {
                                 ></img>
                             </div>
                             <h3>Fashion</h3>
-                        </a>
+                        </Link>
                     </div>
                     <div className="top-categories__item">
-                        <a href="/">
+                        <Link to="/shop">
                             <div className="mb-21 top-categories__image">
                                 <img
                                     src="https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6ac60e2632be762e5829e_image-2-shop-categories-shopwave-template.png"
@@ -33,10 +32,10 @@ const TopCategories = () => {
                                 ></img>
                             </div>
                             <h3>Decoration</h3>
-                        </a>
+                        </Link>
                     </div>
                     <div className="top-categories__item">
-                        <a href="/">
+                        <Link to="/shop">
                             <div className="mb-21 top-categories__image">
                                 <img
                                     src="https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6ac5358cd9b714534d7b8_image-3-shop-categories-shopwave-template.png"
@@ -44,7 +43,7 @@ const TopCategories = () => {
                                 ></img>
                             </div>
                             <h3>Garden</h3>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

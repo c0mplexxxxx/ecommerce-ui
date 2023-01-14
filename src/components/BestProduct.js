@@ -2,12 +2,12 @@ import React, {useEffect} from "react";
 import { default as products } from "../assets/Data";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import {Link} from "react-router-dom";
 const listItems = products.map((product, index) => {
     if (index < 3) {
         return (
             <li key={product.id}>
-                <a href="/">
+                <Link to="/product/1">
                     <div className="best-product__item">
                         <div className="best-product__item__image">
                             <img src={product.src} alt={product.title}></img>
@@ -19,16 +19,14 @@ const listItems = products.map((product, index) => {
                             </p>
                         </div>
                     </div>
-                </a>
+                </Link>
             </li>
         );
     }
 });
 
 const BestProduct = () => {
-    useEffect(() => {
-        AOS.init({duration: 700});
-    }, [])
+    
     return (
         <div className="best-product-wrapper">
             <div className="container">

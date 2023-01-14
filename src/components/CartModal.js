@@ -1,42 +1,41 @@
 import React, { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from "react-router-dom";
 
 const CartModal = (props) => {
-    useEffect(() => {
-        AOS.init({duration: 300});
-    }, []);
+    
     return (props.trigger) ? (
         <div className="modal-wrapper">
-            <div className="overlay" onClick={() => props.setTrigger(false)} data-aos="fade">
-                <div className="d-flex justify-content-center align-center h-100" data-aos="zoom">
-                    <div className="cart-modal">
+            <div className="overlay" onClick={() => props.setTrigger(false)} >
+                <div className="d-flex justify-content-center align-center h-100" >
+                    <div className="cart-modal" onClick={() => props.setTrigger(true)}>
                         <div className="cart__header">
                             <h5>Your Cart</h5>
-                            <a href="#" onClick={() => props.setTrigger(false)}>
+                            <Link to="#" onClick={() => props.setTrigger(false)}>
                                 <i className="bx bx-x"></i>
-                            </a>
+                            </Link>
                         </div>
                         <div className="cart__content">
                             <div className="cart__item">
                                 <div className="cart__item__main-content">
                                     <div className="cart__item__image">
-                                        <a href="/">
+                                        <Link to="/">
                                             <img
                                                 src="https://uploads-ssl.webflow.com/62f51a90d298e65b94bbffcd/62f6a67c4666f047ada3ba87_image-10-shop-product-shopwave-template.png"
                                                 alt="Basic Grey Cap"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="cart__item__text">
-                                        <a href="/">
+                                        <Link to="/">
                                             <h6>Basic Grey Cap</h6>
-                                        </a>
+                                        </Link>
                                         <p>$ 9.99 USD</p>
                                         <p className="mb-8">
                                             <span>color: </span>Gray
                                         </p>
-                                        <a href="/">Remove</a>
+                                        <Link to="/">Remove</Link>
                                     </div>
                                 </div>
                                 <div className="cart__item__input">
@@ -49,22 +48,22 @@ const CartModal = (props) => {
                             <div className="cart__item">
                                 <div className="cart__item__main-content">
                                     <div className="cart__item__image">
-                                        <a href="/">
+                                        <Link to="/">
                                             <img
                                                 src="https://uploads-ssl.webflow.com/62f51a90d298e65b94bbffcd/62f6a36118d02f129150add1_image-7-shop-product-shopwave-template.png"
                                                 alt="Basic Grey Cap"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="cart__item__text">
-                                        <a href="/">
+                                        <Link to="/">
                                             <h6>Basic Grey Cap</h6>
-                                        </a>
+                                        </Link>
                                         <p>$ 9.99 USD</p>
                                         <p>
                                             <span>color: </span>Gray
                                         </p>
-                                        <a href="/">Remove</a>
+                                        <Link to="/">Remove</Link>
                                     </div>
                                 </div>
                                 <div className="cart__item__input">
@@ -77,22 +76,22 @@ const CartModal = (props) => {
                             <div className="cart__item">
                                 <div className="cart__item__main-content">
                                     <div className="cart__item__image">
-                                        <a href="/">
+                                        <Link to="/">
                                             <img
                                                 src="https://uploads-ssl.webflow.com/62f51a90d298e65b94bbffcd/62f697ac77a56fb99798e36f_image-1-shop-product-shopwave-template.png"
                                                 alt="Basic Grey Cap"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="cart__item__text">
-                                        <a href="/">
+                                        <Link to="/">
                                             <h6>Basic Grey Cap</h6>
-                                        </a>
+                                        </Link>
                                         <p>$ 9.99 USD</p>
                                         <p>
                                             <span>color: </span>Gray
                                         </p>
-                                        <a href="/">Remove</a>
+                                        <Link to="/">Remove</Link>
                                     </div>
                                 </div>
                                 <div className="cart__item__input">

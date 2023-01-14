@@ -50,6 +50,11 @@ a {
     color: #fff;
     font-weight: 600;
     font-size: 16px;
+    transition: all .3s;
+    &:hover {
+        background-color: #006fd5;
+        transform: translateY(-4px);
+    }
 }
 
 .d-flex {
@@ -65,6 +70,10 @@ a {
 
 .justify-content-center {
     justify-content: center;
+}
+
+.relative {
+    position: relative;
 }
 
 .mb {
@@ -110,6 +119,26 @@ a {
       transform: translateY(0px);
       opacity: 1;
     }
-  }
+}
+
+.aos-animate[data-aos^="fade"][data-aos^="fade"] {
+    opacity: 0;
+    -webkit-transform: none;
+    transform: none;
+    &.aos-animate {
+      opacity: 1;
+    }
+}
+
+[data-aos="fade-scale"] {
+    opacity: 0;
+    transform: scale(.95);
+    transition-property: transform, opacity;
+    &.aos-animate {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
 
 

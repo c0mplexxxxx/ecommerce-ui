@@ -14,7 +14,7 @@ const products = [
         desc: "Lorem ipsum dolor sit amet, consecteturolilo adipiscing elit. Maecenas turpis dictu",
         category: "Fashion",
         price: 49.99,
-        sOPrice: 19.0,
+        sOPrice: 19.99,
         src: "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f697ac77a56fb99798e36f_image-1-shop-product-shopwave-template.png",
     },
     {
@@ -32,7 +32,7 @@ const products = [
         desc: "Lorem ipsum dolor sit amet, consecteturolilo adipiscing elit. Maecenas turpis dictu",
         category: "Fashion",
         price: 99.99,
-        sOPrice: 49.0,
+        sOPrice: 49.99,
         src: "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a36118d02f129150add1_image-7-shop-product-shopwave-template.png",
     }
 ]

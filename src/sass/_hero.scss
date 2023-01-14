@@ -125,6 +125,7 @@
             color: #3c3e40;
             font-size: 18px;
             margin-bottom: 32px;
+            line-height: 1.5em;
         }
     }
     img {
@@ -180,6 +181,7 @@
         padding: 0 40px;
         max-width: 75%;
         padding-top: 40px;
+        z-index: 2;
         // &--left {
         //     background: url("https://assets.website-files.com/62f51a90d298e6f454bbffca/62f5a123c23d652751277825_image-2-promotion-shopwave-template.webp");
         //     background-size: cover;

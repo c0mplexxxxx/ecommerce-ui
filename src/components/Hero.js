@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {Link} from "react-router-dom";
@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className="hero-wrapper" data-aos="fade-up">
             <div className="container">
-                <div className="d-flex gap-32 mb-32">
+                <div className="hero__content-wrapper">
                     <div className="hero__categories-wrapper">
                         <div className="hero__categories">
                             <div className="hero__categories__heading">
@@ -15,7 +15,7 @@ const Hero = () => {
                                 <h3>Categories</h3>
                             </div>
                             <div className="hero__categories__list">
-                                <Link to="/">
+                                <a href="#">
                                     <div className="hero__categories__list-item">
                                         <div className="d-flex align-center">
                                             <i className="bx bx-star start-ic"></i>
@@ -24,8 +24,8 @@ const Hero = () => {
                                         </div>
                                         <i className="bx bx-chevron-right end-ic"></i>
                                     </div>
-                                </Link>
-                                <Link to="/">
+                                </a>
+                                <Link to="/shop">
                                     <div className="hero__categories__list-item">
                                         <div className="d-flex align-center">
                                             <i className="bx bxs-t-shirt start-ic"></i>
@@ -34,7 +34,7 @@ const Hero = () => {
                                         <i className="bx bx-chevron-right end-ic"></i>
                                     </div>
                                 </Link>
-                                <Link to="/">
+                                <Link to="/shop">
                                     <div className="hero__categories__list-item">
                                         <div className="d-flex align-center">
                                             <i className="bx bx-paint-roll start-ic"></i>
@@ -43,7 +43,7 @@ const Hero = () => {
                                         <i className="bx bx-chevron-right end-ic"></i>
                                     </div>
                                 </Link>
-                                <Link to="/">
+                                <Link to="/shop">
                                     <div className="hero__categories__list-item">
                                         <div className="d-flex align-center">
                                             <i className="bx bx-leaf start-ic"></i>
@@ -52,12 +52,14 @@ const Hero = () => {
                                         <i className="bx bx-chevron-right end-ic"></i>
                                     </div>
                                 </Link>
-                                <button
-                                    type="submit"
-                                    className="btn-primary hero__categories__list-btn"
-                                >
-                                    All products
-                                </button>
+                                <Link to="/shop">
+                                    <button
+                                        type="submit"
+                                        className="btn-primary hero__categories__list-btn"
+                                    >
+                                        All products
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -76,16 +78,20 @@ const Hero = () => {
                                     Buy now
                                 </button>
                             </div>
-                            <img
-                                    data-aos="zoom-in"
-                                    data-aos-delay="300"
-                                    src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f59f2e85742f2812aad006_image-1-promotion-shopwave-template-p-500.webp"
-                                    alt="2x1 in basic hoodies"
-                            ></img>
+                            <div className="hero__image-cover">
+                                <div className="hero__image-wrapper">
+                                    <img
+                                            data-aos="zoom-in"
+                                            data-aos-delay="300"
+                                            src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f59f2e85742f2812aad006_image-1-promotion-shopwave-template-p-500.webp"
+                                            alt="2x1 in basic hoodies"
+                                    ></img>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="d-flex gap-32">
+                <div className="hero__promotion-wrapper">
                     <div className="hero__promotion-banner" >
                         <div className="hero__promotion-banner__content">
                             <h2 className="hero__promotion-banner__heading">
@@ -99,13 +105,15 @@ const Hero = () => {
                                 Buy now
                             </button>
                         </div>
-                        <img
-                            data-aos="fade"
-                            data-aos-duration="1000"
-                            data-aos-delay="200"
-                            src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f5a123c23d652751277825_image-2-promotion-shopwave-template.webp"
-                            alt="Get 40% OFF in plants"
-                        ></img>
+                        <div className="hero__promotion__image-wrapper">
+                            <img
+                                data-aos="fade"
+                                data-aos-duration="1000"
+                                data-aos-delay="200"
+                                src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f5a123c23d652751277825_image-2-promotion-shopwave-template.webp"
+                                alt="Get 40% OFF in plants"
+                            ></img>
+                        </div>
                     </div>
                     <div className="hero__promotion-banner" >
                         <div className="hero__promotion-banner__content">
@@ -120,13 +128,15 @@ const Hero = () => {
                                 Buy now
                             </button>
                         </div>
-                        <img
-                            data-aos="fade"
-                            data-aos-duration="1000"
-                            data-aos-delay="200"
-                            src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f59f2e3ef1494f28c278de_image-3-promotion-shopwave-template.webp"
-                            alt="Get 15% OFF in decoration"
-                        ></img>
+                        <div className="hero__promotion__image-wrapper">
+                            <img
+                                data-aos="fade"
+                                data-aos-duration="1000"
+                                data-aos-delay="200"
+                                src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f59f2e3ef1494f28c278de_image-3-promotion-shopwave-template.webp"
+                                alt="Get 15% OFF in decoration"
+                            ></img>
+                        </div>
                     </div>
                 </div>
             </div>

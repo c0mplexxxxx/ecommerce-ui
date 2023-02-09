@@ -1,60 +1,38 @@
-import React, {useEffect} from "react";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Shop from "./pages/Shop/Shop";
-import Category from "./pages/Category/Category";
-import Product from "./pages/Product/Product";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect, useState } from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
+import Product from "./pages/Product";
+import Layout from "./components/Layout";
+import { useDispatch } from "react-redux";
+import { fetchProducts } from "./redux/productsSlice";
 
-const Layout = () => {
-    AOS.init({
-        once: true,
-        offset: 150,
-        easing: 'ease-out'
-    });
-    return (
-        <div className="App">
-            <Header />
-            <Outlet />
-            <Footer />
-        </div>
-    );
-};
-
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Layout />,
-        children: [
-            {
-                path: "/",
-                element: <Home />,
-            },
-            {
-                path: "/shop",
-                element: <Shop />,
-            },
-            {
-                path: "/category/:id",
-                element: <Category />,
-            },
-            {
-                path: "/product/:id",
-                element: <Product />,
-            },
-        ],
-    },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<Layout />} path="/">
+      <Route element={<Home />} path="/" />
+      <Route element={<Shop />} path="/shop" />
+      <Route element={<Product />} path="/product/:slug" />
+    </Route>
+  )
+);
 
 const App = () => {
-    return (
-        <div>
-            <RouterProvider router={router} />
-        </div>
-    );
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, []);
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
 };
 
 export default App;

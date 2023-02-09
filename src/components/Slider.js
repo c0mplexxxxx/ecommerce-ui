@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Slide from './Slide'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {Link} from "react-router-dom";
 
-const Slider = () => {
+const Slider = (props) => {
   
   return (
     <div className="slider-wrapper" data-aos="fade-up">
@@ -14,7 +14,7 @@ const Slider = () => {
                 <Link to="/">Explore popular products</Link>
             </div>
         </div>
-        <Slide/>
+        <Slide data={props}/>
     </div>
   )
 }

@@ -23,7 +23,15 @@
     }
 }
 
+.lastest__products-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    justify-content: space-between;
+}
+
 .lastest__product {
+    width: calc(25% - 30px);
     border-radius: 16px;
     margin-bottom: 40px;
     box-shadow: 0 2px 6px 0 rgb(37 39 41 / 4%);
@@ -54,6 +62,7 @@
             color: $pri-color;
             font-size: 14px;
             margin-bottom: 12px;
+            text-transform: capitalize;
         }
         p:last-child {
             color: #66696c;
@@ -74,5 +83,23 @@
     }
     &:last-child {
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .lastest__product {
+        width: calc(33.33% - 30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lastest__product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .lastest__product {
+        width: 100%;
     }
 }

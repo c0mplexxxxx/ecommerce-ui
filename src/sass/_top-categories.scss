@@ -48,3 +48,9 @@
         border-radius: 50%;
     }
 }
+
+@media screen and (max-width: 479px) {
+    .top-categories__list {
+        gap: 30px;
+    }
+}

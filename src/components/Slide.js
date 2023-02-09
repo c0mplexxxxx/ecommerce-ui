@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Link} from "react-router-dom";
+import { getProducts } from "../pages/Home"
+import { useSelector } from "react-redux";
 
 function SampleNextArrow(props) {
     const { onClick } = props;
@@ -32,13 +34,29 @@ export default class Responsive extends Component {
             slidesToScroll: 1,
             nextArrow: <SampleNextArrow />,
             prevArrow: <SamplePrevArrow />,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 479,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
         };
         return (
             <div className="container">
                 <Slider {...settings}>
                     {products.map((product) => (
                         <div className="slider__product" key={product.id}>
-                            <Link to="/product/1">
+                            <Link to="/">
                                 <div className="slider__product__image">
                                     <img
                                         src={product.src}

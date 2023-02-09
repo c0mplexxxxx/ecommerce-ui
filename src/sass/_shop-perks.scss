@@ -43,3 +43,52 @@
         }
     }
 }
+@media screen and (max-width: 991px) {
+    .shop-perks__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .shop-perks {
+        width: 95%;
+        padding: 30px 24px;
+    }
+    .shop-perks__item img {
+        margin-right: 10px;
+        width: 42px;
+        max-width: 42px;
+    }
+    .shop-perks__item__text p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shop-perks-wrapper {
+        background-color: #fcfcfc;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .shop-perks {
+        flex-direction: column;
+    }
+    .shop-perks__item--middle {
+        border: none;
+        margin: 0;
+        padding: 16px 0;
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+        border-top: 1px solid #e2e6eb;
+        border-bottom: 1px solid #e2e6eb;
+    }
+    .shop-perks__item {
+        flex-direction: column;
+        text-align: center;
+        img {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

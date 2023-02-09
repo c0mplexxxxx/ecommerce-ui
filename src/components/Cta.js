@@ -23,12 +23,14 @@ const Cta = () => {
                                 <div className="discount-code">FASH2022</div>
                             </div>
                         </div>
-                        <img 
-                            data-aos="zoom-in"
-                            data-aos-delay="500"
-                            src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f5a283764027ab420ddfc3_image-cta-v1-shopwave-template-p-500.png"
-                            alt="cta-image"
-                        ></img>
+                        <div className="cta__image-wrapper">
+                            <img
+                                data-aos="zoom-in"
+                                data-aos-delay="500"
+                                src="https://assets.website-files.com/62f51a90d298e6f454bbffca/62f5a283764027ab420ddfc3_image-cta-v1-shopwave-template-p-500.png"
+                                alt="cta-image"
+                            ></img>
+                        </div>
                     </div>
                 </div>
             </div>

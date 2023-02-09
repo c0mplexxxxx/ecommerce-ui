@@ -6,6 +6,7 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -137,6 +138,19 @@ a {
     &.aos-animate {
       transform: scale(1);
       opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    .sm-container {
+        max-width: 1224px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 24px;
     }
 }
 

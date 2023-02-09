@@ -221,6 +221,7 @@
     }
 }
 
+
 .dropdown {
     display: flex;
     justify-content: space-between;
@@ -263,6 +264,16 @@
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-wrapper {
+        display: none;
+    }
+    .mobile-header-wrapper {
+        display: block;
     }
 }
 

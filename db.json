@@ -1,0 +1,148 @@
+{
+  "products": [
+      {
+          "id": "1",
+          "title": "Basic Grey T-shirt",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "39.99",
+          "sOPrice": "29.99",
+          "color": "grey",
+          "brand": "Fashion Co.",
+          "category": "fashion",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a777d6557d526b9dba47_image-12-shop-product-shopwave-template.png",
+          "slug": "basic-grey-t-shirt"
+      },
+      {
+          "id": "2",
+          "title": "Basic Grey Cap",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "19.99",
+          "sOPrice": "9.99",
+          "color": "grey",
+          "brand": "Fashion Co.",
+          "category": "fashion",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a67c4666f047ada3ba87_image-10-shop-product-shopwave-template.png",
+          "slug": "basic-grey-cap"
+      },
+      {
+          "id": "3",
+          "title": "White Sneakers",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "99.99",
+          "sOPrice": "49.99",
+          "color": "white",
+          "brand": "Sneakers & Co.",
+          "category": "fashion",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a36118d02f129150add1_image-7-shop-product-shopwave-template.png",
+          "slug": "white-sneakers"
+      },
+      {
+          "id": "4",
+          "title": "Pink Sweater",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "49.99",
+          "sOPrice": "19.99",
+          "color": "pink",
+          "brand": "Fashion Co.",
+          "category": "fashion",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f697ac77a56fb99798e36f_image-1-shop-product-shopwave-template.png",
+          "slug": "pink-sweater"
+      },
+      {
+          "id": "5",
+          "title": "Solid Wood Wall Clock",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "39.99",
+          "sOPrice": "29.99",
+          "color": "wood",
+          "brand": "Decoration Inc.",
+          "category": "decoration",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a5817df21bd25005733c_image-9-shop-product-shopwave-template.png",
+          "slug": "solid-wood-wall-clock"
+      },
+      {
+          "id": "6",
+          "title": "Ceramic Flower Vases",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "21.99",
+          "sOPrice": "19.99",
+          "color": "white",
+          "brand": "Pottery Mark",
+          "category": "decoration",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a4d388e4769bd0d43903_image-8-shop-product-shopwave-template.png",
+          "slug": "ceramic-flower-vases"
+      },
+      {
+          "id": "7",
+          "title": "Vintage Wall Decor",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "99.99",
+          "sOPrice": "82.99",
+          "color": "wood",
+          "brand": "Decoration Inc.",
+          "category": "decoration",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a3680a41928563314a48_image-6-shop-product-shopwave-template.png",
+          "slug": "vintage-wall-decor"
+      },
+      {
+          "id": "8",
+          "title": "Vase for Kitchen",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "35.99",
+          "sOPrice": "32.99",
+          "color": "brown",
+          "brand": "Pottery Mark",
+          "category": "decoration",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f69e0e9570feb72ddaff1e_image-3-shop-product-shopwave-template.png",
+          "slug": "vase-for-kitchen"
+      },
+      {
+          "id": "9",
+          "title": "Dinnerware Sets",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "49.99",
+          "sOPrice": "29.99",
+          "color": "white",
+          "brand": "Pottery Mark",
+          "category": "decoration",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f69c48d95bf7073441efae_image-2-shop-product-shopwave-template.png",
+          "slug": "dinnerware-sets"
+      },
+      {
+          "id": "10",
+          "title": "11-Inch Indoor Plant",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "29.99",
+          "sOPrice": "19.99",
+          "color": "green",
+          "brand": "Decoration Inc.",
+          "category": "garden",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a70577a56fdcb499a2bd_image-11-shop-product-shopwave-template.png",
+          "slug": "11-inch-indoor-plant"
+      },
+      {
+          "id": "11",
+          "title": "12-Inch Indoor Plant",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "39.99",
+          "sOPrice": "29.99",
+          "color": "green",
+          "brand": "Decoration Inc.",
+          "category": "garden",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a23d7ca58c57c65bafc4_image-5-shop-product-shopwave-template.png",
+          "slug": "12-inch-indoor-plant"
+      },
+      {
+          "id": "12",
+          "title": "15-Inch Indoor Plant",
+          "desc": "Nisi quis eleifend quam adipiscing vitae aliquet bibendum enim facilisis gravida neque",
+          "price": "49.99",
+          "sOPrice": "39.99",
+          "color": "green",
+          "brand": "Decoration Inc.",
+          "category": "garden",
+          "src": "https://assets.website-files.com/62f51a90d298e65b94bbffcd/62f6a14c7ca58c62315ba854_image-4-shop-product-shopwave-template.png",
+          "slug": "15-inch-indoor-plant"
+      }
+  ]
+}

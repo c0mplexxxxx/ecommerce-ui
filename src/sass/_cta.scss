@@ -1,55 +1,113 @@
 .cta-wrapper {
-    padding-top: 100px;
-    padding-bottom: 140px;
+  padding-top: 100px;
+  padding-bottom: 140px;
 }
 
 .cta-section {
-    width: 100%;
-    background-color: #f7f8f9;
-    border-radius: 16px;
-    position: relative;
+  overflow: visible;
+  padding: 104px 40px;
+  width: 100%;
+  background-color: #f7f8f9;
+  border-radius: 16px;
 }
 
 .cta {
-    max-width: 992px;
-    padding: 104px 92px;
+  width: 100%;
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__content-wrapper {
+    max-width: 425px;
+  }
+  &__vertical-line {
+    width: 3px;
+    background-color: $pri-color;
+    margin: 10px 0;
+    margin-right: 31px;
+  }
+  &__content {
     display: flex;
-    &__vertical-line {
-        width: 3px;
-        background-color: $pri-color;
-        margin: 10px 0;
-        margin-right: 31px;
+    margin-bottom: 24px;
+    h2 {
+      font-size: 40px;
     }
-    &__content {
-        display: flex;
-        margin-bottom: 24px;
-        h2 {
-            font-size: 40px;
-        }
-        h1 {
-            font-size: 110px;
-            font-weight: 700;
-        }
+    h1 {
+      font-size: 100px;
+      font-weight: 700;
     }
+  }
+  .discount-text {
+    color: #252729;
+    font-size: 18px;
+    .discount-code {
+      display: inline-block;
+      color: #fff;
+      background-color: $pri-color;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 46px;
+      padding: 12px;
+      line-height: 0.75em;
+      margin-left: 12px;
+    }
+  }
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    margin-top: -155px;
+    margin-bottom: -140px;
+    margin-left: 40px;
+    flex: 1;
     img {
-        position: absolute;
-        object-fit: cover;
-        top: -8%;
-        right: 8%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .discount-text {
-        color: #252729;
-        font-size: 18px;
-        .discount-code {
-            display: inline-block;
-            color: #fff;
-            background-color: $pri-color;
-            font-weight: 700;
-            font-size: 16px;
-            border-radius: 46px;
-            padding: 12px;
-            line-height: .75em;
-            margin-left: 12px;
-        }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cta__image-wrapper {
+    max-width: 451px;
+    margin-left: 30px;
+  }
+  .cta__content h1, .cta__content .h1 {
+    font-size: 80px;
+  }
+  .cta__content h2, .cta__content .h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+  }
+  .cta__image-wrapper {
+    margin: 0;
+    img {
+      width: 70%;
     }
+  }
+  .cta__content-wrapper {
+    margin-bottom: 30px;
+  }
+  .cta-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .cta-section {
+    padding-top: 50px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }

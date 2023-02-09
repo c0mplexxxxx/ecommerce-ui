@@ -55,3 +55,52 @@
         }
     }
 }
+
+@media screen and (max-width: 991px) {
+    .best-product__item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .best-product__item__image {
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .best-product__list {
+        width: 30%;
+        text-align: center;
+    }
+    .best-product__list h3, .best-product__list .h3 {
+        font-size: 24px;
+    }
+    .best-product__item__text h4, .best-product__item__text .h4 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .best-product {
+        flex-direction: column;
+    }
+    .best-product__list {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .best-product__item {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &__image {
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+    }
+    .best-product-wrapper {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

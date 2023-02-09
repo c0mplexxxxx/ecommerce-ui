@@ -136,3 +136,29 @@
 .slick-dots li.slick-active button:before {
     color: $pri-color!important ;
 }
+
+@media screen and (max-width: 991px) {
+    .slider__product__text .slider-btn {
+        width: 50%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .arrow {
+        width: 54px;
+        height: 54px;
+    }
+    .slider__header > h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .slider__header {
+        flex-direction: column;
+        gap: 30px;
+        & > a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

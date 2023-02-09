@@ -1,0 +1,148 @@
+@media screen and (max-width: 768px) {
+  .mobile-header-wrapper {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) {
+  .mobile-header-wrapper {
+    display: none;
+  }
+}
+
+.mobile-header-wrapper {
+  background-color: $bg-color;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.mobile-header__content--main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+}
+
+.mobile-header__logo {
+  max-width: 170px;
+  transition: all .3s;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.mobile-header__right {
+  display: flex;
+  align-items: center;
+  .mobile-header__cart {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: all .3s;
+    &:hover {
+      opacity: .7;
+      &--quantity {
+        opacity: .8;
+      }
+    }
+    &--quantity {
+      color: white;
+      width: 26px;
+      height: 26px;
+      background-color: $pri-color;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 26px;
+      margin-right: 6px;
+      font-weight: 600;
+    }
+    &--image {
+      max-width: 26px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .mobile-header__menu-btn {
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: $pri-color;
+    transition: all .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.mobile-header__content--search {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 22px;
+}
+
+.mobile-header__menu {
+  height: 100%;
+}
+.mobile-menu__content {
+  li {
+    color: white;
+    font-size: 28px;
+    text-align: left;
+    padding: 22px 0;
+    &:first-child {
+      padding-top: 10px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header__content__search-box {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .header__menu {
+    display: block;
+    height: 100vh;
+    animation: slideDown 0.5s alternate;
+    transition: display 0.5s;
+    ul {
+      display: block;
+    }
+    li {
+      display: block;
+      & > * {
+        font-size: 26px;
+      }
+    }
+    .header__menu__navbar__item {
+      padding: 0;
+      color: white;
+      text-align: left;
+      padding: 22px 0;
+    }
+    .dropdown-here {
+      position: relative;
+    }
+    .dropdown-wrapper {
+      position: relative;
+      top: 0;
+      padding: 0;
+      padding-top: 30px;
+    }
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
